@@ -28,12 +28,14 @@ Once you have cppcheck installed, you may need to manually download the misra.py
 
     cppcheck --version
 
-Then download the misra.py addon for the printed version (`<version>`). For a Linux installation, you may want to use `wget` to save the file as follows:
+Then download the misra.py and cppcheckdata.py addon for the printed version (`<version>`). For a Linux installation, you may want to use `wget` to save the file as follows:
 
 ```sh
     wget https://raw.githubusercontent.com/danmar/cppcheck/<version>/addons/misra.py
+    wget https://raw.githubusercontent.com/danmar/cppcheck/<version>/addons/cppcheckdata.py
     sudo mkdir -p /usr/local/share/CppCheck/addons
     sudo cp -f misra.py /usr/local/share/CppCheck/addons/misra.py
+    sudo cp -f cppcheckdata.py /usr/local/share/CppCheck/addons/cppcheckdata.py
 ```
 
 ### Generate texts from MISRA C:2012 guidelines
